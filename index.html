@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evo.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer {
+            background-color: rgba(0, 58, 113, 255);
+        }
+
+        img {
+            height: 280px;
+        }
+
+        body {
+            background: hsl(0, 0, 94%);
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="Home.html"><b>Evo</b>.com</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="col-md-6 col-sm-8 col-xs-11 navbar-left mt-2">
+                    <div class="navbar-form " role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"
+                                style="max-width: 100%; width: 100%; border-radius: 230px;">
+                        </div>
+                    </div>
+                </div>
+                <form class="d-flex my-2 my-lg-0">
+                    <a href="Home.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-heart p-2"></i></a>
+                    <a href="Home.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-bell p-2"></i></a>
+                    <a href="cart.html"><i style="color: white; margin-left: 2vmin;" class="bi bi-cart p-2"></i></a>
+                    <a href="userprofile.html"><i
+                            style="color: white; margin-left: 2vmin; padding: 2vmin;"><span>Login/Signup</span></i></a>
+                    <a href="userprofile.html"><i style="color: white; margin-left: 2vmin;"
+                            class="bi bi-person-circle p-2"></i></a>
+                </form>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="padding: 1vmin; margin: 3vmin;" class="full">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Homepage</li>
+            </ol>
+        </nav>
+
+        <div class="box1">
+            <div class="productimg">
+                <img style=" width: 100%; height: 100%;"
+                    src="https://s3-alpha-sig.figma.com/img/e352/cc86/b7a1f038791ca97411223d2d7b6bd484?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QzlwRZBe1utBPineNeYl~uryJgnuJoVXX4uKtLI8CCbkSMjryGbkErzEyRWX3mM5atfaGh9QLV34BPOmxNHlvYqXGRosho1z~JLJiXI0KOfbVnv3FJOcH0sknxssCw7bRx9v8NhBEWMXX1kKubyvQgJatQquk9xs-lk9cIqVCkxMHduqA6cQLg-iXwv8N8kDWXUlo7IbxKpBXmPeSjptDKGgtuAhivnsKuaZDjZC-SBdQyoDRHoOYxZsESgjvGY~bBBvWOSZXqdeinivCgBcFxplbNsYgJmml1NPz82aZd~u1keDhPt3JkmDfq2CmlyK4F4J6eFpoXMEe6Z9jDKrHw__"
+                    alt="" srcset="">
+            </div>
+
+            <div class="container other-products">
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="p-3">
+                            <img style="margin-left: 10vmin;"
+                                src="https://s3-alpha-sig.figma.com/img/082f/b6d9/bb5d19ddd8dc79d8d73555282b73ca4e?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ndx9FzcWEzRcjrWIbZGogwfsh4gxmLOfPJsuBlGYe0jiUbWspgOQ7y4h1Xfy2WbgO3ceLu9bOv33wJA9dNedIrRSRih6s1~ota3MT3vnfKwrTPtxM2R-ozDxtsaK0xQ1Y8fxaP3gu2nnBIb2gIaLgQTweFjI-bT77ZfOWARkcbHNkJr~h7YLIOzRGHOBLIPcC7OOcT8BI4tu0wJAeXScCdKe0N7b5jBB~dlqFp~DNBUqU1MfPPFEILH-fiDrM82HdK7~8bx8~ExmQOR2z8VWneTn7qKh-ESJsH1WKGV9PEyKMpIAvAgtqOE-ljh-cEU6bREMV3qSUIl6nbFO0f-pMQ__"
+                                alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2">
+                    <div class="col-6">
+                        <div class="p-3">
+                            <img style="margin-right: 10vmin;"
+                                src="https://s3-alpha-sig.figma.com/img/63ea/a9aa/5ee286cd1215226c451bd2fa4c61aeb6?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Wi1n~lMeI670vVswWi1-xyL1O3MW7YEKL89UWjLM3oz2fgnKR9E1ID21w-LzhSbRoN7sp3u-AwgCzuiOeEa59IbpYikQBHoSD0BQ7PqPSvLFywzQqrKFnmdD02PBl~mDwdnAnHJZTmj2ynP46NUmSJjsvvCPKsULxW~FTD7DlizDRVoFwMWWD6MdmD9rnMjr7bowTLFiogqJ9PS5edpuUntfPzrOBJMc0h58fMGxrDud4YFXO1dMcVNVqfElMck9-lujCa6QAZMUGstpL2MFPkfGH5Qz9x1Qs~4LmfGwOR5zH~Gem3G2~8sBzfid4bT6dbU0G0aJxicWlorgmQ43Qw__"
+                                alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row  g-2">
+                    <div class="col-6">
+                        <div class="p-3">
+                            <img style="margin-left: 10vmin;"
+                                src="https://s3-alpha-sig.figma.com/img/df86/d410/0834aeb5bec7aa2cad5b708816e6e682?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UzMNwXPMJB4imEAqHCnpBDfPXC1SoNkxflODBRpW8YDLtUX3UULOck5eVELbtFDFNLyPgRO0EdykTp2f33sRhDW4Mjtk3myn9wt~2B-pEru-7kLlud5vql-9nHzl-6D2Lt1im2L-c7DUpzS7frIL7TDEv8C8~Rz~MnqZFQOgqTko49zFtPTT2IU9TBB3Dck1f2AVC6tPgWAVJVGo00biWzCm6vJfxqD2KduOw5V9DZuW~rbgIzBfIfpoCqLJj2~VwnEjW-ohIJGWQc446gPUMsmX5E4tNOYyMem27RVjh3Wpp-ouefgBVFsAkS~42EdxsF2Z9zQgfjr9GIVz0E44bA__"
+                                alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row  g-2">
+                    <div class="col-6">
+                        <div class="p-3">
+                            <img style="margin-right: 10vmin;"
+                                src="https://s3-alpha-sig.figma.com/img/e352/cc86/b7a1f038791ca97411223d2d7b6bd484?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QzlwRZBe1utBPineNeYl~uryJgnuJoVXX4uKtLI8CCbkSMjryGbkErzEyRWX3mM5atfaGh9QLV34BPOmxNHlvYqXGRosho1z~JLJiXI0KOfbVnv3FJOcH0sknxssCw7bRx9v8NhBEWMXX1kKubyvQgJatQquk9xs-lk9cIqVCkxMHduqA6cQLg-iXwv8N8kDWXUlo7IbxKpBXmPeSjptDKGgtuAhivnsKuaZDjZC-SBdQyoDRHoOYxZsESgjvGY~bBBvWOSZXqdeinivCgBcFxplbNsYgJmml1NPz82aZd~u1keDhPt3JkmDfq2CmlyK4F4J6eFpoXMEe6Z9jDKrHw__"
+                                alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="color: blue;margin-left: 154vmin;">View more</p>
+
+        <div class="box2">
+            <div style="padding: 1vmin; margin: 3vmin;" class="det1">
+                <div style="font-family: 'Inter';" class="info">
+                    <h4 style="font-weight: bold;">HP Laptop 15s</h4>
+                    <h4 style="font-family: 'Inter';">HP Intel Core i5 11th Gen (8 GB/512 GB SSD/Windows 11, 15.6 Inch,
+                        Natural Silver)
+                        Intel Iris Xe Graphics,
+                        Dual Speakers fq5330TU </h4>
+                    <p class="card-text price"><span class="float-start rating-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span> &nbsp;4.2</p>
+                    <p style="color: rgba(84,85,85,255);">400+ people brought this last month</p>
+                </div>
+                <hr>
+                <div class="description">
+                    <h6 style="color: blue;padding: 1vmin; margin: 3vmin;">Product Details </h6>
+                    <div class="icons">
+                        <div class="col">
+                            <img src="https://s3-alpha-sig.figma.com/img/75dd/43ad/59e4a7bc22baa63be00cb02f4f001d9f?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KXYifqxgNzLFFriNbLrOjdUZizsXHK0sScrGxGVM0CfQDmnPs8TkVotuhsJ8Uq7Fe1pI0Sc2K6Zr2m43u4aRukFV-XFkakaaZNfG5FH8q6I0Smfa-qcdRQD4iDv7So378d6p2K52qidsspLNAcCkW7ZelQatyUqCZ4jHPti2JR-jT4~F01fxPq2vkK29nZMgnwYdCzrAclN3hPPlqATgky7tc6myDXQZFbHoklbHQIcjPfgQsQxxafSqcByYR3H6tIi2xb2OAOLEOG2mI~xUcTLXA~kP4f7GFaYO~IyyUqepH5bN0L1fJsm1Uyd-lli1NDIj4ndySFYxD6iznrB4bg__"
+                                alt="" srcset="">
+                        </div>
+                        <div class="col">
+                            <img src="https://s3-alpha-sig.figma.com/img/7af5/1454/8bac703143b536333bdba0fb124f4541?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UoQMRX7WNMLRY9m8dQgDSgtD-D7krBpa6P5LKNMrNgh528KnLAWZfIxn5AUTM6JDyNK0wVq26o48waN1uEZEmRUkOz2Qo4epTFD9laFHFM91GPiFhO319SmwUWkNTXu0MbVyRr8atYYzZtXmXwEekCUJjzeHI3A0wx0xRexGUndTTEW7J648TN1Hm1E1r0n5WoW3DSMb9-0R3xwC~p~cVxBYv~8T53uClOR2ooM~nchSAnFbH~M97NypZjWtRj96unRUt0UMhJekrjU-fzP4pBGGTH0xww25Hak3pN0h53eBvX02Sdq8D~lDC~wFe5-HlT0WitA5~cHxJ0BlclSZ8w__"
+                                alt="" srcset="">
+                        </div>
+                        <div class="col">
+                            <img src="https://s3-alpha-sig.figma.com/img/9287/2ccd/4c7c858080f74cf2fb0966ca5fe4b85b?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W1Hz-OwcGZChLEMPx7WV307aPRPhNTOAj2IPABwIRbxObRtH6Lt3BnwusH0SksGVtakg5nmhlgVovTnPORO2DFFFHwMNfbZV40wviUMl99-3cL~TBBRy7Bi~o5lwPdRdSzYkf7nEu-YCMvOoLMORwdINZrAyyxtuqG5h4d3stvNhFBh753e~1pvXrhTA7-qPhAYoAhcOsBEhgQQelcYWNwXiDAyEP19yCju9y~AmCPIBVzCfoIF4iL1Szf~TQ~UmXkutrPOJiVsuxi-qIZx55Sej4MRZkoWWMjz34AvaUENy2Vg1NANpbU2GwOu5~kahVsOP52z0C-gefjHAsWc~6w__"
+                                alt="">
+                        </div>
+                    </div>
+                    <h5 style="margin-top: 1%; padding: 1vmin; margin: 3vmin;">Description</h5>
+                    <table style="border-collapse: collapse; border: none;padding: 1vmin; margin: 3vmin;">
+                        <tr style="border: none;">
+                            <td style="border: none;">Brand</td>
+                            <td style="border: none;">HP</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">Model Name</td>
+                            <td style="border: none;">15s-fq5330TU</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">Screen Size </td>
+                            <td style="border: none;">15.6 Inches</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">Colour</td>
+                            <td style="border: none;">Silver</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">Hard Disk Size </td>
+                            <td style="border: none;">512 GB</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">Processor </td>
+                            <td style="border: none;">Core i5</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">RAM Memory</td>
+                            <td style="border: none;">8GB</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;">Operating System</td>
+                            <td style="border: none;">Windows 11</td>
+                        </tr>
+                        <tr style="border: none;">
+                            <td style="border: none;"> Special Feature</td>
+                            <td style="border: none;">Backlit Keyboard.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="padding: 1vmin; margin: 3vmin;" class="desc">
+                    <h4><b>About this product</b></h4>
+                    <ul>
+                        <li>(10-core 12th Gen Intel Core i5-1235U) Unleash your productivity with this high-performing
+                            processor.
+                            With
+                            12 threads and 12MB L3 cache, it's designed for quick, efficient multitasking.</li>
+                        <li>(Intel Iris Xe graphics) Experience captivating visuals and high-quality performance with
+                            integrated
+                            Intel
+                            Iris Xe graphics. Perfect for creative work and casual gaming.</li>
+                        <li>(Enhanced memory and storage) With 16GB DDR4-3200 MHz RAM, and a 512 GB PCIe NVMe M.2 SSD,
+                            experience
+                            rapid loading and ample storage for all your files.</li>
+                        <li>(Micro-edge display) Enjoy vibrant colors on the 15.6" Full HD screen. With a resolution of
+                            1920 x 1080
+                            pixels, it delivers crisp, clear visuals for an immersive viewing experience.</li>
+                        <li>(Long-lasting battery) Fast charge up to 50% in 45 mins. Stay unplugged longer with the
+                            3-cell, 41 Wh
+                            battery and power through your day without the need for constant charging.</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <h4><b>Advanced Details</b></h4>
+                <hr>
+                <h4><b>Highlights</b></h4>
+                <h6>For Personal works &nbsp;&nbsp;Mild - Productivity &nbsp;&nbsp;Low-end Games</h6>
+            </div>
+
+            <div class="det2">
+                <h4 style="text-align: center;"><b>Variants</b></h4>
+                <div class="variants">
+
+                    <div class="gen">
+                        <div style="width: 30vmin;" class="column wf">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="p-3">
+                                        <h6>i3 12th Gen</h6>
+                                        <h6>Rs.39,990</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 30vmin;" class="column wf">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="p-3">
+                                        <h6>i5 12th Gen</h6>
+                                        <h6>Rs.54,999</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 30vmin;" class="column wf">
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <div class="p-3 d-flex">
+                                        <div>
+                                            <h6>i7 12th Gen</h6>
+                                            <h6>Rs.64,222</h6>
+                                        </div>
+                                        <h6 style="color: red;">Sold out</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock d-flex">
+                    <h6 style="color: rgb(17, 17, 226);padding-left: 5vmin;">Price Details</h6>
+                    <p style="color: green; padding-left: 18vmin;">In stock</p>
+                </div>
+                <div class="strike d-flex">
+                    <strike style="color: rgb(114, 83, 83);padding-left: 5vmin;">Rs.57,822/-</strike>
+                    <p style="color: green;padding-left: 15vmin;">-10% Off</p>
+                </div>
+                <h4 style="padding-left: 5vmin;">Rs.51,499</h4>
+                <h5 style="color: rgb(114, 69, 69);padding-left: 5vmin;">Delivered by Dealer - Arron logistics, Chennai.
+                </h5>
+                <div class="pricedetails">
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div style="display: flex;">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <h6 style="padding-left: 2vmin;" class="my-0">With Extended warranty for 1 year -
+                                    Rs.1299/-</h6>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div style="display: flex;">
+                                <input type="checkbox" class="form-check-input" id="">
+                                <h6 style="padding-left: 2vmin;" class="my-0">With Extended warranty for 2 years -
+                                    Rs.2199/-</h6>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btnpay">
+                        <button type="button" class="btn btn-primary" onclick="buynow()">Add to Cart</button>
+                        <button type="button" class="btn btn-primary" onclick="buynow()">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="reviews">
+            <h4><b>Reviews</b></h4>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/6239/febb/788d15352e5535fbad6deaf92bbadfa8?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FUVdO0IhN2Z17uq6ryGXMlCxs7qRzWbqTq1CIQChQRYJ9z9ea85PaM2j8tWWace-HMqCP0MjDygKPoZSojC1vQ1ciGS1OWlhPaZoIO1AVbyGmeIwqkE2ya14d~D-GQXp4gsN92UWqF--GQrmTlDq27NoV8GzHGG2BM6QJbuhnU0L377Y9DhFCdmsg3v4~DcTIQc2jkqEj4ZHuXq1MywcZ-u3yjWBVXCh-CBfucjfB4knocT7~IXQbudDZ3FHDCkm85LFvMdLOkM4xYcCRvNNSqS77SixcRgKfC7bovyHYcw1jI6aujQo5Pw0ylFEscASqv372wmkNntuvX~b9oDy3Q__"
+                        alt="">
+                    <h6>Dhruv kumar </h6>
+                    <p class="card-text price"><span class="float-start rating-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span></p>
+                    <p>This laptop is good for this price, I would suggest this for normal productivity use case. I
+                        tried some
+                        ofthe Microsoft office apps and it runs well without any lag. About the laptop, the weight is
+                        minimum and
+                        battery last longer like 5 hrs heavy work.</p>
+                </li>
+                <li class="list-group-item">
+                    <img src="https://s3-alpha-sig.figma.com/img/ed9f/cc05/40746feeb359ce6f66316522d727dc34?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MzbDpqcDluY~u~Jw0WCsahDAbo23SdOBAhQsaluB6TqdlwTcEjyPCjp0-XMuOxkLWgLPulsMOHOxmooNFq0zLh0-CKrIPNpVrGN7GyCfgNjouMgDARwNWFSf4Z2lit40m1lavKVAEfv9pS4XFfLLeqMv6zTeHoATvJiAMFkyZr~1P6ShbpzqvMEDLrWPSttumJFQHpp8xQChc8FC7eBdJ5vo6LhPGHlzE13cGtm9fq8SD1Jwxgz7YstEXLhcsCItwfU8f1dwCFV~q~Xyki13M3O5dFvXxfbyYuJNqDmB04VbrGWdKhaoKb9BLyEHOXKvQkzzVZiirGHVvQgyKcdqsw__"
+                        alt="">
+                    <h6>Purva Jain</h6>
+                    <p class="card-text price"><span class="float-start rating-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span></p>
+                    <p>The Laptop is good but the delivery time took a lot but arrived without any damage. It literally
+                        took 10 days additional.Microsoft office apps and it runs well without any lag</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-fluid my-5">
+            <h4>Based on your search</h4>
+            <h1><b>Similar Products</b></h1>
+            <div class="row">
+                <div class="col-12 m-auto">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item mb-4">
+                            <div class="card border-0 shadow">
+                                <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                                <i class="bi bi-heart position-absolute like"></i>
+                                <img src="https://s3-alpha-sig.figma.com/img/7d83/be6f/472c590ffba71c5b4facd3c9f7821946?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DtYfaBi1uJQgTswycIjQ7QgIlG2V6J4NhKw0ISumn9MJ79TV3~oreL1wFj9lK4cE8Jdk6pP98L0bYa-8bblIbYjW23G7R0TScTX6~5KiD79pIo68fj908g-EgtyBVUEuE3Qic0XK5ImBtR6ZTEbJ8CvNfTccoz0SxSpUv1XlFHCecDRRxU1NkqtGGaAPt2xANl-ywga7UzJ1waZtPGwMjgViTKdyrPwszqSK-2LcPeOTq0-H-TFqCvUQeCpQ991~QC6~Hw3g2gXV5~gLbQxlbjSeJxqsrjSsq--FdTI3zZI11h3lXh~oz4w~nv3DZsOCKVsUmIxA1bI02fpy2q5Zfg__"
+                                    alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>HP Laptop 15s - 12th Gen Intel i5 Processor,
+                                            Intel Iris Xe Graphics, 15.6-inch (39.6cm)...</h6>
+                                    </div>
+                                    <h5>Rs. 54,999</h5>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"
+                                        style="border-radius: 12px;">
+                                        <button class="btn btn-primary me-md-2" type="button"
+                                            onclick="buynow()">Buy</button>
+                                    </div>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                                <i class="bi bi-heart position-absolute like"></i>
+                                <img src="https://s3-alpha-sig.figma.com/img/d392/d12c/26a19679b82dab0a9eb79d85e6b0e079?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X4ND4NG99Y4l-yE84mmEiIbbEyN3hYqtetc2aGT6aaP-pR94SjsMu0NA7O5dYOHVkZ4~rWO-XcRJbij3VWZKmlKGIBf2qoR9WcNj7cVL2knZSjLyPF6Bw4yVMFOEDktwDnuGKL1d0psmDw1QIGsBW1srX4YiQRRCiW7gzne8bg7xvlaQkAsFncBhoRLtaXJ0CY74-Tv9AHQaNHJLXafsjuip-Sx~RrrpKkGNTGeq1C3jbgBWmYm5Ah6YqGWUP5ZOZqoK~hD0zBWFbrRc~RnmVGDHRouiRFTp4fC7EIj-IOEU6lIxbtPAXMPASkimEg3Sv0ArgYDgzgjVZRTFlfkqcw__"
+                                    alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i3 - 12th Gen processor, 14”(35.56 cm) FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 33,990</h5>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"
+                                        style="border-radius: 12px;">
+                                        <button class="btn btn-primary me-md-2" type="button"
+                                            onclick="buynow()">Buy</button>
+                                    </div>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                                <i class="bi bi-heart position-absolute like"></i>
+                                <img src="https://s3-alpha-sig.figma.com/img/1a6a/7b9a/11dad064d92b4820adf2612e251d61cc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iY6zEJWe10XMDcRvleGZcPd7BtrY0xYktizxETH9VKj4-gwG6EUv0SJwzgFNPZIGE0ECHHuyFLlBXWTdGKeTHoUB4yiU2lXXRco80cNKFOEBRpuFOD2nCI0BBXnbi0wp3-os~-kY8vHfk-p2te6SK99Z1aFYIoDbrAB-MpUuECIByY1gptqNBp792iKKYALcH1E9Unad~6JVmgGrf5UDLwbL1asbizZREtEMBvCKIBoiys4TIGqn2~1NmgKAJK8jegoCCTxOZTjPhRVzvg6RLKwy4WQrHx-Rl8geDEM-s7w2x7ELVVSSHj6Qfdb9TWzXk7dsVfejL6p-DawQ52hzeg__"
+                                    alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>HP Victus AMD Ryzen 5 Hexa Core 5600H - (16 GB/512 GB SSD/Windows 11/4 GB
+                                            Graphics/NVIDIA GeForce RTX 3050)...</h6>
+                                    </div>
+                                    <h5>Rs. 58,999</h5>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"
+                                        style="border-radius: 12px;">
+                                        <button class="btn btn-primary me-md-2" type="button"
+                                            onclick="buynow()">Buy</button>
+                                    </div>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                                <i class="bi bi-heart position-absolute like"></i>
+                                <img src="https://s3-alpha-sig.figma.com/img/7d83/be6f/472c590ffba71c5b4facd3c9f7821946?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DtYfaBi1uJQgTswycIjQ7QgIlG2V6J4NhKw0ISumn9MJ79TV3~oreL1wFj9lK4cE8Jdk6pP98L0bYa-8bblIbYjW23G7R0TScTX6~5KiD79pIo68fj908g-EgtyBVUEuE3Qic0XK5ImBtR6ZTEbJ8CvNfTccoz0SxSpUv1XlFHCecDRRxU1NkqtGGaAPt2xANl-ywga7UzJ1waZtPGwMjgViTKdyrPwszqSK-2LcPeOTq0-H-TFqCvUQeCpQ991~QC6~Hw3g2gXV5~gLbQxlbjSeJxqsrjSsq--FdTI3zZI11h3lXh~oz4w~nv3DZsOCKVsUmIxA1bI02fpy2q5Zfg__"
+                                    alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>HP Laptop 15s - 12th Gen Intel i7 Processor,
+                                            Intel Iris Xe Graphics, 15.6-inch (39.6cm)
+                                            8RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 65,999</h5>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"
+                                        style="border-radius: 12px;">
+                                        <button class="btn btn-primary me-md-2" type="button"
+                                            onclick="buynow()">Buy</button>
+                                    </div>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                                <i class="bi bi-heart position-absolute like"></i>
+                                <img src="https://s3-alpha-sig.figma.com/img/d392/d12c/26a19679b82dab0a9eb79d85e6b0e079?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=X4ND4NG99Y4l-yE84mmEiIbbEyN3hYqtetc2aGT6aaP-pR94SjsMu0NA7O5dYOHVkZ4~rWO-XcRJbij3VWZKmlKGIBf2qoR9WcNj7cVL2knZSjLyPF6Bw4yVMFOEDktwDnuGKL1d0psmDw1QIGsBW1srX4YiQRRCiW7gzne8bg7xvlaQkAsFncBhoRLtaXJ0CY74-Tv9AHQaNHJLXafsjuip-Sx~RrrpKkGNTGeq1C3jbgBWmYm5Ah6YqGWUP5ZOZqoK~hD0zBWFbrRc~RnmVGDHRouiRFTp4fC7EIj-IOEU6lIxbtPAXMPASkimEg3Sv0ArgYDgzgjVZRTFlfkqcw__"
+                                    alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>ASUS Vivobook 14, Intel Core i5 - 12th Gen processor, 14 FHD, 8GB
+                                            RAM, 512...</h6>
+                                    </div>
+                                    <h5>Rs. 43,999</h5>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"
+                                        style="border-radius: 12px;">
+                                        <button class="btn btn-primary me-md-2" type="button"
+                                            onclick="buynow()">Buy</button>
+                                    </div>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow">
+                                <!-- <i class="bi bi-heart-fill position-absolute liked"></i> -->
+                                <i class="bi bi-heart position-absolute like"></i>
+                                <img src="https://s3-alpha-sig.figma.com/img/1a6a/7b9a/11dad064d92b4820adf2612e251d61cc?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iY6zEJWe10XMDcRvleGZcPd7BtrY0xYktizxETH9VKj4-gwG6EUv0SJwzgFNPZIGE0ECHHuyFLlBXWTdGKeTHoUB4yiU2lXXRco80cNKFOEBRpuFOD2nCI0BBXnbi0wp3-os~-kY8vHfk-p2te6SK99Z1aFYIoDbrAB-MpUuECIByY1gptqNBp792iKKYALcH1E9Unad~6JVmgGrf5UDLwbL1asbizZREtEMBvCKIBoiys4TIGqn2~1NmgKAJK8jegoCCTxOZTjPhRVzvg6RLKwy4WQrHx-Rl8geDEM-s7w2x7ELVVSSHj6Qfdb9TWzXk7dsVfejL6p-DawQ52hzeg__"
+                                    alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <div class="card-title text-center">
+                                        <h6>HP Victus AMD Ryzen 5 Hexa Core 5900 - (16 GB/512 GB SSD/Windows 11/4 GB
+                                            Graphics/NVIDIA GeForce RTX 3050)......</h6>
+                                    </div>
+                                    <h5>Rs. 65,999</h5>
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end"
+                                        style="border-radius: 12px;">
+                                        <button class="btn btn-primary me-md-2" type="button"
+                                            onclick="buynow()">Buy</button>
+                                    </div>
+                                    <p class="card-text price"><span class="float-start rating-stars">
+                                            <i class="bi bi-star-fill"></i>
+                                        </span> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="it2 d-flex">
+        <h1 style="color: rgb(28, 28, 212);"><b>Cart</b></h1>
+        <h6 style="color: blue; margin-left: 170vmin;">Items: 2</h6>
+    </div>
+
+    <div class="b1">
+        <div class="cartimg p-3 m-3">
+            <div class="i">
+                <img src="https://s3-alpha-sig.figma.com/img/e352/cc86/b7a1f038791ca97411223d2d7b6bd484?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QzlwRZBe1utBPineNeYl~uryJgnuJoVXX4uKtLI8CCbkSMjryGbkErzEyRWX3mM5atfaGh9QLV34BPOmxNHlvYqXGRosho1z~JLJiXI0KOfbVnv3FJOcH0sknxssCw7bRx9v8NhBEWMXX1kKubyvQgJatQquk9xs-lk9cIqVCkxMHduqA6cQLg-iXwv8N8kDWXUlo7IbxKpBXmPeSjptDKGgtuAhivnsKuaZDjZC-SBdQyoDRHoOYxZsESgjvGY~bBBvWOSZXqdeinivCgBcFxplbNsYgJmml1NPz82aZd~u1keDhPt3JkmDfq2CmlyK4F4J6eFpoXMEe6Z9jDKrHw__"
+                    alt="" srcset="">
+            </div>
+            <div style="margin-right: 12vmin;
+      padding: 5vmin;" class="t">
+                <h4>HP Laptop 15s</h4>
+                <h6>12th Gen Intel Core i5-1235U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD, Intel Iris Xe
+                    Graphics, Backlit KB,MSO,Thin & Light, Dual Speakers (Win 11, Silver, 1.69 kg), fq5330TU </h6>
+                <p class="card-text price"><span class="float-start rating-stars">
+                        <i style="color: blue;" class="bi bi-star-fill"><span style="color: black;">4.2 &nbsp;
+                                (6,567)</span></i>
+                    </span> </p>
+                <p style="margin-top: 23vmin;">With Extended warranty for 1 year - Rs.1590/-</p>
+
+            </div>
+            <div class="r">
+                <h6 style="color: blue;">Brand:HP</h6>
+                <h6><b>Rs.53,999/-</b></h6>
+            </div>
+        </div>
+        <hr>
+        <div class="img2 p-3 m-3">
+            <div class="i">
+                <img src="https://s3-alpha-sig.figma.com/img/d85c/12d0/1e50093f5c411748c8302a1efd1a1c41?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MN65Xym33XnVaVOPoccKG0mxN9AM4sU6q6FAZxK4dD40zVy2DZ90jwxGEmxWATInnyovaRwNAYoXOBsmef88DDnrQaTB4O-kr6Oqcn-Pd10ezNMJm4mO69A~K1pxt5eTVkL6e6AU0pA-B2quKuY0gHO-Y30VCRKQu9IsWAASXus513akpjE4ck19nAWRA6Li5p0SeOxBzA5ilfO3pW3TkajVnoBMsJZO~6vlNlaHEXNMAbrAVCDNa81EuehIuRsCbUR9XvIcZ1ZoBOUVNxnALPG0OBOFGOuWiDPaCxwu3ZhCMKdNCtSd9q-vBBUgUpZjCAINh5efkVVrXBckFlq2jw__"
+                    alt="" srcset="">
+            </div>
+            <div style="margin-right: 12vmin;
+      padding: 5vmin;" class="t">
+                <h4>Zebronics Thunder bluetooth</h4>
+                <h6>Wireless Headphones with 60H Backup, Gaming Mode, Dual Pairing, ENC, AUX, Micro SD, Voice assistant,
+                    Comfortable Earcups, Call Function(Black)</h6>
+                <p class="card-text price"><span class="float-start rating-stars">
+                        <i style="color: blue;" class="bi bi-star-fill"><span style="color: black;">3.8
+                                &nbsp;(16,567)</span></i>
+                    </span> </p>
+            </div>
+            <div class="r">
+                <h6 style="color: blue;">Brand:Zebronics</h6>
+                <h6><b>Rs.989/-</b></h6>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="delivery">
+        <div class="row  g-5">
+            <div class="col-md-7 col-lg-8">
+                <form class="needs-validation need" novalidate>
+                    <h4 class="mb-3 p-3 my-4">Delivery Details</h4>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid name is required.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="numberInput">Number:</label>
+                                <input type="number" class="form-control" id="numberInput" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-body-secondary">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                        <label for="address" class="form-label">Delivery Address *</label>
+                        <div class="col-12 d-flex">
+                            <label for="address" class="form-label">House no & Street</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        </div>
+                        <div class="col-12 d-flex">
+                            <label for="country" class="form-label">City & State</label>
+                            <input type="text" class="form-control" id="address" placeholder="City & State" required>
+                        </div>
+                        <label for="zip" class="form-label">Pincode</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h4 class="mb-3">Select Payment Method</h4>
+                    <div class="pay">
+                        <div class="my-3">
+                            <div class="form-check">
+                                <div class="add d-flex">
+                                    <input id="credit" name="paymentMethod" type="checkbox" class="form-check-input"
+                                        checked required>
+                                    <label class="form-check-label" for="credit">Credit card or Debit card</label>
+                                    <h6 style="margin-left: 10vmin;color: blue;">Add card details</h6>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="upi d-flex">
+                                    <input id="debit" name="paymentMethod" type="checkbox" class="form-check-input"
+                                        required>
+                                    <label class="form-check-label" for="debit">UPI Transaction - Gpay & PayPal</label>
+                                    <h6 style="margin-left: 2vmin;color: blue;">Add UPI details</h6>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input"
+                                    required>
+                                <label class="form-check-label" for="paypal">Net Banking</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input"
+                                    required>
+                                <label class="form-check-label" for="paypal">Cash on Delivery</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="checkbox" class="form-check-input"
+                                    required>
+                                <label class="form-check-label" for="paypal"><span style="color: blue;">EMI
+                                        option</span> (This product is eligible for No-cost EMI)</label>
+                            </div>
+                            <div class="method">
+                                <p style="color: rgba(226, 209, 209, 0.664);">
+                                <h3>Payment method is not selected </h3>
+                                Select any one to add details and complete the process.</p>
+                                <p style="color: rgba(226, 209, 209, 0.664);">If you had already logged in and entered
+                                    all details. It will be filled automatically, but if you haven’t, Then you can enter
+                                    above.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5 col-lg-4 order-md-last cart">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Your cart</span>
+                <span class="badge bg-primary rounded-pill">2</span>
+            </h4>
+            <ul class="list-group mb-3 p-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            HP Laptop 15s
+                        </label>
+                    </div>
+                    <span class="text-body-secondary">Rs 53,999</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Zebronics Bluetooth Heaphone
+                        </label>
+                    </div>
+                    <span class="text-body-secondary">Rs 898</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Grand Total</span>
+                    <strong>Rs. 54,988</strong>
+                </li>
+            </ul>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 24px;">
+                <button class="btn btn-primary me-md-2" type="button" onclick="payment()">Complete Payment</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <h2 style="color: rgb(28, 28, 180); text-align: left;margin-left: 10vmin;margin-top: 3vmin;"><b>User Profile</b>
+    </h2>
+    <div class="pro d-flex">
+        <div class="col-md-7 col-lg-8">
+            <form class="needs-validation needed" novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Valid name is required.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="numberInput">Number:</label>
+                            <input type="number" class="form-control" id="numberInput" required>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span
+                                class="text-body-secondary">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address" class="form-label">Delivery Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+                    <div class="form-row d-flex">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom03">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div style="margin-left: 1vmin;" class="col-md-3 mb-3">
+                            <label for="validationCustom04">State</label>
+                            <input type="text" class="form-control" id="validationCustom04" placeholder="State"
+                                required>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="zip" class="form-label">Pincode</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Zip code required.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="profileimg">
+            <h4>Account ID: 18972TS5D99WY</h4>
+            <div class="b">
+                <img class="pimg"
+                    src="https://s3-alpha-sig.figma.com/img/c2a0/7f3e/3d00b9094e8c71fc9d5dee962337e7e6?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LQohzYoy25z4FG-jzzXNDFZR93Eh~CI0OA3lkGoduWHFaJrj4W3z3wMlpl-6iMncgOH6sAtl4sbkDvRClDrLZ5CQnWHNGRTfXmMmDyLZUagscP471frScSH6ZecBq0ceBPmlgT-~aG8uo~--R6RAupGCB6eD5SVcRmbtFJrv1u2tN-Rafaqhfh23WHZjfrPKLqRD-p4PyLOajZhTxoNKBRQ8n9FmOzE5mvj32aKd5Z3NCt82ufybUgra~NhDRvFxFEzMqwMN8OrqEhDKdOWcazHm1EL6p989UKX5NkgE47a48Rh3wsm5J1Io0RLG4yz~glr9o0I6lN4IfiLCeOTZHQ__"
+                    alt="" srcset="">
+            </div>
+            <h6 style="color: blue; margin-top: 4px;margin-left: 14vmin;">Edit Profile picture</h6>
+        </div>
+    </div>
+    <div style="display: flex; margin-left: 160vmin;">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+            <button class="btn btn-primary me-md-2" type="button">Edit Profile</button>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+            <button class="btn btn-secondary me-md-2" type="button" onclick="history()"
+                onclick="savedetails()">Save</button>
+        </div>
+    </div>
+
+    <hr>
+    <div class="order">
+        <div class="orderhistory">
+            <h5><b>Order Hisory</b></h5>
+        </div>
+        <hr>
+        <div class="Customer Support">
+            <h5><b>Customer Support</b></h5>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="border-radius: 12px;">
+        <button class="btn btn-primary me-md-2" type="button" onclick="logout()">Log out</button>
+    </div>
+    <div style="padding: 1vmin; margin: 3vmin;">
+        <h5>User Profile</h5>
+        <hr>
+        <div style="padding: 6vmin; margin-bottom: 2vmin;">
+            <div class="user d-flex">
+                <h4 style="color: blue;margin-right: 100vmin;">Order History</h4>
+                <span style="color: rgb(218, 207, 194);">Report an issue</span>
+                <span style="color: rgb(218, 207, 194);">Refresh <i style="margin-top: 10vmin;"
+                        class="bi bi-arrow-repeat"></i></span>
+            </div>
+            <div style="padding-bottom: 25vmin;" class="shop">
+                <h6 style="color: rgb(218, 207, 194);text-align: center;">No History of orders</h6>
+                <div style="padding-bottom: 33vmin;" class="d-grid gap-2 d-md-flex justify-content-md-center"
+                    style="border-radius: 12px;">
+                    <button style="border: 1px solid blue; border-radius: 22px;padding: 1vmin;" onclick="goToHome()"
+                        class="btn me-md-2" type="button"><span style="color: blue;">Shop Now</span></button>
+                </div>
+                <hr>
+                <a href="customersupport.html">
+                    <h5>Customer Support</h5>
+                </a>
+            </div>
+            <div style="padding: 1vmin; margin: 3vmin;">
+                <h6 style="font-weight: bold;">User Profile</h6>
+                <hr>
+                <h6 style="font-weight: bold;">Order History</h6>
+                <hr>
+                <h4 style="color: blue;">Customer Support</h4>
+                <ol class="list">
+                    <li>Contact customer care</li>
+                    <p>To Call immediately to our customer service</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button style="border: 1px solid blue; border-radius:22px;padding-left: 17vmin;
+          padding-right: 17vmin;margin-bottom: 2vmin;" class="btn me-md-2" type="button"><span
+                                style="color: blue;">Call</span></button>
+                    </div>
+                    <li>Enter the issue through Mail</li>
+                    <p style="  width:50%;
+      ">Write a mail to us about the issue. Issues related with site malfunction, payment issues, Product delay or
+                        damaged products, etc.</p>
+                </ol>
+                <div>
+                    <form class="f1 mb-3 p-3 my-4">
+                        <div class="form-group ">
+                            <label for="exampleFormControlInput1">Enter your Email:</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group my-4">
+                            <label for="exampleFormControlTextarea1">Describe the issue:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="submit d-flex">
+                    <p style="  width:50%;">Within 2 to 3 business days we will reply or solve the problem. We will
+                        intimate you initially if the problem takes additional days to solve.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center" style="border-radius: 12px;">
+                        <button
+                            style="border: 1px solid blue; border-radius: 22px;padding-left: 10vmin; padding-right: 10vmin; margin-top: 65px;"
+                            class="btn me-md-2" type="button" onclick="submit()"><span
+                                style="color: blue;">Submit</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <footer class="container py-5 text-white">
+                    <div class="row">
+                        <div class="col-12 col-md">
+                            <h5>Categories</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-secondary" href="#">Personal Computers</a></li>
+                                <li><a class="link-secondary" href="#">Laptops</a></li>
+                                <li><a class="link-secondary" href="#">Gaming Computers</a></li>
+                                <li><a class="link-secondary" href="#">Gaming Laptops</a></li>
+                            </ul>
+                            <small class="d-block mb-3 text-muted">&copy; Copyright Evo.com</small>
+                            <small class="d-block mb-3 text-muted">All Rights Reserved</small>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5>Laptops</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-secondary" href="#">Laptop Accessories</a></li>
+                                <li><a class="link-secondary" href="#">Bluetooth devices</a></li>
+                                <li><a class="link-secondary" href="#">Bags</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5>Computer Hardware</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-secondary" href="#"> Intel & AMD Processor</a></li>
+                                <li><a class="link-secondary" href="#">Hardrive & SSD</a></li>
+                                <li><a class="link-secondary" href="#">SMPS & Cables</a></li>
+                                <li><a class="link-secondary" href="#">Mother Board</a></li>
+                                <li><a class="link-secondary" href="#">RAM</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5>Let us help you</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-secondary" href="#">Your Account</a></li>
+                                <li><a class="link-secondary" href="#">Report an issue</a></li>
+                                <li><a class="link-secondary" href="#">Order History</a></li>
+                                <li><a class="link-secondary" href="#">Terms & Conditions</a></li>
+                                <li><a class="link-secondary" href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md">
+                            <h5>Contact</h5>
+                            <ul class="list-unstyled text-small">
+                                <li><a class="link-secondary" href="#">Call support-1188-6454-80</a></li>
+                                <li><a class="link-secondary" href="#">evo.electronics@gmail.com</a></li>
+                                <li><a class="link-secondary mt-3" href="#">Let’s Connect</a></li>
+                                <div class="fb margin-right:5vmin;">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-instagram"></i>
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="toast align-items-center text-white bg-primary border-0 position-fixed top-0" role="alert"
+                aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        Item is successfully added to your cart.
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
+                </div>
+            </div>
+
+
+
+
+            <!-- Bootstrap JavaScript Libraries -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+                integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+                crossorigin="anonymous"></script>
+            <script src="first.js"></script>
+
+            <script>
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                })
+            </script>
+
+
+</body>
+
+</html>
